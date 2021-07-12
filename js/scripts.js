@@ -4,6 +4,7 @@
 //   this.player1 = player1;
 //   this.player2 = player2;
 // }
+let turnScore = 0;
 
 function PigDice() {
   this.players = {};
@@ -21,7 +22,7 @@ PigDice.prototype.addPlayer = function(player) {
 };
 
 function Player(currentScore) {
-  this.currentScore = currentScore;
+  this.currentScore = turnScore + currentScore;
   return this.currentScore;
 }
 
@@ -31,14 +32,14 @@ function Die() {
 
 function Turn () {
   // hit button to roll
-  let turnScore = 0;
-  let roll = Die();
+  //let turnScore = 0;
+  //let roll = Die();
 
   if (roll === 1) {
     this.roll = 0;
     //switch player
   } else {
-    turnScore = this.roll += roll;
+    //turnScore = this.roll += roll;
     //store value in turnScore
   }
   return turnScore;
@@ -54,7 +55,12 @@ function Hold() {
 $(document).ready(function() {
   $("form#language").submit(function(event) {
     event.preventDefault();
-
+    $("#score1") = turnScore;
 
   });
+});
+
+$("button#rolldice").click(function() {
+  let roll = Die();
+  turnScore = roll += roll;
 });

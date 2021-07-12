@@ -10,15 +10,24 @@
 </head>
 <body>
   <div class="container">
-    <h1>Pig Dice</h1>
+    <h1>Italian Pig Dice</h1>
+    <img src="img/3c-rome-roll-cover.jpg" alt="">
     <p> Wanna roll some dice?</p>
     <div id="gameTurn">
-      <p>It's (player1)'s turn, roll some dice, or hold?</p>
-      <button type="button" class="btn-success" id="rollDiceOne">Roll Dice</button>
-      <button type="button" class="btn-danger" id="rollDiceOne">Hold Dice</button> 
-      <button type="button" class="btn-danger" id="giveUpOne">Give Up?</button>
+      <p>It's <span class="player1"></span> turn, roll some dice, or hold?</p>
+      <button type="button" class="roll-button" id="rollDice">Roll Dice</button>
+      <button type="button" class="hold-button" id="holdDice">Hold Dice</button> 
+      <button type="button" class="misc-button" id="giveUpOne">Give Up?</button>
     </div>
-
   </div>
+  <div id="turnScore">
+    <div id="player1">
+      <h6>Player One:<span></span></h6>
+      <p>Score: <span id="score1"></span></p>
+    </div>
+    <div id="player2">
+      <h6>Player Two:<span></span></h6>
+      <p>Score: <span></span></p>
+    </div>
 </body>
 </html>
