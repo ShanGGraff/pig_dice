@@ -12,25 +12,38 @@
   <div class="container">
     <h1>Italian Pig Dice</h1>
     <img src="img/3c-rome-roll-cover.jpg" alt="">
+    
+
+    <form id="game">
+      <button type="submit" class="start-game" id="startGame">Start Game</button>
+    </form>
+
+    <!--form id="player">
+      <button type="submit" class="add-player-button" id="addPlayerButton">Add Player</button>
+    </form> -->
+    
     <p> Wanna roll some dice?</p>
     <div id="gameTurn">
       <p>It's <span class="player1"></span> turn, roll some dice, or hold?</p>
-      <form id="language">
+      <form id="roll">
         <button type="submit" class="roll-button" id="rollDice">Roll Dice</button>
       </form>
       <!-- button type="button" class="hold-button" id="holdDice">Hold Dice</button> 
       <button type="button" class="misc-button" id="giveUpOne">Give Up?</button> -->
     </div>
   </div>
-  <!-- <div id="turnScore">
-    <div id="player1">
-      <h6>Player One:<span></span></h6>
-      <p>Score: <span id="score1"></span></p>
+  <div class = "container">
+    <p><span id="rollScore"></span></p>
+    <div id="turnScore">
+      <div id="player1">
+        <h6>Player One:<span></span></h6>
+        <p>Score: <span id="score1"></span></p>
+      </div>
+      <div id="player2">
+        <h6>Player Two:<span></span></h6>
+        <p>Score: <span></span></p>
+      </div>
     </div>
-    <div id="player2">
-      <h6>Player Two:<span></span></h6>
-      <p>Score: <span></span></p>
-    </div>
-  </div> -->
+  </div>
 </body>
 </html>

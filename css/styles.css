@@ -1,0 +1,15 @@
+/* # {
+  display: none;
+} */
+
+.container { 
+  font-family: "Comic Sans MS", "Comic Sans";
+  width: 33%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
